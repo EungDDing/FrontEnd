@@ -40,7 +40,7 @@ const Home = () => {
             height: "30vh",
           margin: "20px",
       }}className="bg-dark text-white">
-          <Card.Link href="/Transaction">
+          <Card.Link href="/Trade">
           <Card.Img style={{
             width: "100%",
             height: "30vh",
@@ -76,7 +76,7 @@ const Home = () => {
         height: "30vh",
           margin: "20px",
       }}className="bg-dark text-white">
-          <Card.Link href="/Questions">
+          <Card.Link href="/QnA">
           <Card.Img style={{
               width: "100%",
               height: "30vh",

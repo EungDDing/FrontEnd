@@ -2,7 +2,7 @@
 import ListGroup from "react-bootstrap/ListGroup";
 import React from "react";
 
-const CommuMain = () => {
+function CommuMain(props) {
     return (
         <div>
             <div style={{

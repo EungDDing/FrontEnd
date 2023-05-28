@@ -12,8 +12,9 @@ import BallpythonAdoption from './information_project/ballpython/ballpythonAdopt
 import BallpythonAfter from './information_project/ballpython/ballpythonAfter';
 import BallpythonEquipment from './information_project/ballpython/ballpythonEquipment';
 import CommuMain from './component/Community/CommuMain';
-import QnAPage from './component/QnA/QnAPage';
+import QnAMain from './component/QnA/QnAMain';
 import TradePage from './component/Trade/TradePage';
+import TradeMain from './component/Trade/TradeMain';
 
 function App() {
   return (
@@ -22,8 +23,8 @@ function App() {
       <Routes>
         <Route path = "/" element = { <Home /> }/>
         <Route path = "/Information" element = { <Information /> }/>
-        <Route path = "/Transaction" element = { <TradePage /> }/>
-        <Route path = "/Quetions" element = { <QnAPage /> }/>
+        <Route path = "/Trade" element = { <TradePage /> }/>
+        <Route path = "/QnA" element = { <QnAMain /> }/>
         <Route path = "/Community" element = { <CommuMain /> }/>
         <Route path = "/MyPage" element = { <Diary /> }/>
         <Route path = "/Information/BallpythonMain" element = { <BallpythonMain /> }/>

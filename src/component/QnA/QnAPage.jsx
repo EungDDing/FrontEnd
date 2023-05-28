@@ -1,33 +1,12 @@
-import Nav from "react-bootstrap/Nav";
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
 import React from "react";
 
 import QnAQuestion from "./QnAQuestion";
 import QnAAnswer from "./QnAAnswer";
 
-const QnAPage = () => {
+function QnAPage (props) {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Container>
-                    <Navbar.Brand href="#home">RIQ</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
-                            <Nav.Link href="#info">정보</Nav.Link>
-                            <Nav.Link href="#trade">거래</Nav.Link>
-                            <Nav.Link href="#commu">커뮤니티</Nav.Link>
-                            <Nav.Link href="#QnA">QnA</Nav.Link>
-                        </Nav>
-                        <Nav>
-                            <Nav.Link href="#signin">로그인</Nav.Link>
-                            <Nav.Link href="#signup">회원가입</Nav.Link>
-                            <Nav.Link href="#mypage">마이페이지</Nav.Link>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+            
             <div style={{
                 width: "70%",
                 margin: "0 auto",

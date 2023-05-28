@@ -11,9 +11,9 @@ const NavbarElements = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="/Information">정보</Nav.Link>
-                            <Nav.Link href="/Transaction">거래</Nav.Link>
+                            <Nav.Link href="/Trade">거래</Nav.Link>
                            <Nav.Link href="/Community">커뮤니티</Nav.Link>
-                            <Nav.Link href="/ReactDoc">QnA</Nav.Link>
+                            <Nav.Link href="/QnA">QnA</Nav.Link>
                         </Nav>
                         <Nav>
                             <Nav.Link href="#signin">로그인</Nav.Link>

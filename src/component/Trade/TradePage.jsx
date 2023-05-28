@@ -1,7 +1,7 @@
 import TradeCard from "./TradeCard";
 import React from "react";
 
-const TradePage = () => {
+function TradePage(props) {
     return (
         <div>
             <div style={{

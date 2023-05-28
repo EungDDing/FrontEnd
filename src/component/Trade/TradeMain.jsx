@@ -2,7 +2,7 @@
 import ListGroup from "react-bootstrap/ListGroup";
 import React from "react";
 
-const TradeMain = () => {
+function TradeMain(props) {
     return (
         <div>
             <div style={{

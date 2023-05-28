@@ -1,35 +1,54 @@
-import Nav from "react-bootstrap/Nav";
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
+import ListGroup from "react-bootstrap/ListGroup";
 import React from "react";
 
-import QnAQuestion from "./QnAQuestion";
-import QnAAnswer from "./QnAAnswer";
-
-function QnAMain (props) {
+function CommuMain(props) {
     return (
         <div>
-            
             <div style={{
                 width: "70%",
                 margin: "0 auto",
             }}>
-                <QnAQuestion 
-                title="새로 입양을 했는데요..."
-                id="goodman"
-                img="https://m.petinzooshop.com/web/product/big/202112/57746595f426e36d47214ca678369e61.jpg" 
-                content="이 친구가 얼마 정도로 자랄까요??? 이 친구에 맞는 집을 좀 사려는데요.."
-                />
+                <div style={{
+                    marginTop: "20px",
+                    marginBottom: "20px",
+                }}>
+                    <h1>QnA</h1>
+                </div>
+                <div style={{
+                    borderBottom: "2px solid rgba(0, 0, 0, 1)",
+                }}></div>
+                <div>
+                    <ListGroup variant="flush">
+                        <ListGroup.Item><span style={{
+                            margin: "1%",
+                        }}>4</span>
+                        <span>좋은 거래처가 어디일까요??</span><span style={{
+                            float: "right",
+                        }}>goodman</span></ListGroup.Item>
+                        <ListGroup.Item><span style={{
+                            margin: "1%",
+                        }}>3</span>
+                        <span>이떤 도구가 잘 어울릴까요</span><span style={{
+                            float: "right",
+                        }}>Rapture</span></ListGroup.Item>
+                        <ListGroup.Item><span style={{
+                            margin: "1%",
+                        }}>2</span>
+                        <span>이 친구 종이 무엇일까요</span><span style={{
+                            float: "right",
+                        }}>richman</span></ListGroup.Item>
+                        <ListGroup.Item><span style={{
+                            margin: "1%",
+                        }}>1</span>
+                        <span>새로 입양을 했는데요...</span><span style={{
+                            float: "right",
+                        }}>goodman</span></ListGroup.Item>
+                    </ListGroup>
+                </div>
 
-                <QnAAnswer
-                id="더파충류샵"
-                answer="종류를 보아하니 볼파이튼인데요. 파충류는 보통 ..."
-                />
             </div>
         </div>
     )
-
 }
 
-export default QnAMain;
-
+export default CommuMain;
