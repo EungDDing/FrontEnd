@@ -13,7 +13,6 @@ function TradeCard(props) {
                 borderRadius: "15px",
             }}
         >
-            
             <Card.Body>
                 <Card.Img style={{
                     height: "180px",
@@ -29,7 +28,7 @@ function TradeCard(props) {
                 <Card.Text style={{ fontSize: "20px" }}>{props.price}</Card.Text>
             </Card.Body>
             <Card.Body>
-                <Card.Link href={props.link}>구매하기</Card.Link>
+                <Card.Link href="/Trade/TradePage">구매하기</Card.Link>
             </Card.Body>
         </Card>
     );

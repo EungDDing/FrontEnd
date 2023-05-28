@@ -24,6 +24,7 @@ function App() {
         <Route path = "/" element = { <Home /> }/>
         <Route path = "/Information" element = { <Information /> }/>
         <Route path = "/Trade" element = { <TradePage /> }/>
+        <Route path = "/Trade/TradePage" element = { <TradeMain />}/>
         <Route path = "/QnA" element = { <QnAMain /> }/>
         <Route path = "/Community" element = { <CommuMain /> }/>
         <Route path = "/MyPage" element = { <Diary /> }/>
