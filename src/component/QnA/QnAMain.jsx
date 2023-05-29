@@ -1,7 +1,7 @@
-import ListGroup from "react-bootstrap/ListGroup";
 import React from "react";
+import QnAList from "./QnAList";
 
-function CommuMain(props) {
+function QnAMain(props) {
     return (
         <div>
             <div style={{
@@ -18,32 +18,26 @@ function CommuMain(props) {
                     borderBottom: "2px solid rgba(0, 0, 0, 1)",
                 }}></div>
                 <div>
-                    <ListGroup variant="flush">
-                        <ListGroup.Item><span style={{
-                            margin: "1%",
-                        }}>4</span>
-                        <span>좋은 거래처가 어디일까요??</span><span style={{
-                            float: "right",
-                        }}>goodman</span></ListGroup.Item>
-                        <ListGroup.Item><span style={{
-                            margin: "1%",
-                        }}>3</span>
-                        <span>이떤 도구가 잘 어울릴까요</span><span style={{
-                            float: "right",
-                        }}>Rapture</span></ListGroup.Item>
-                        <ListGroup.Item><span style={{
-                            margin: "1%",
-                        }}>2</span>
-                        <span>이 친구 종이 무엇일까요</span><span style={{
-                            float: "right",
-                        }}>richman</span></ListGroup.Item>
-                        <ListGroup.Item><span style={{
-                            margin: "1%",
-                        }}>1</span>
-                        <span>새로 입양을 했는데요...</span><span style={{
-                            float: "right",
-                        }}>goodman</span></ListGroup.Item>
-                    </ListGroup>
+                    <QnAList
+                    number="4"
+                    title="좋은 거래처가 어디일까요??"
+                    id="goodman"
+                    />
+                    <QnAList
+                    number="3"
+                    title="필요한 도구가 뭐가 있을까요?"
+                    id="richman"
+                    />
+                    <QnAList
+                    number="2"
+                    title="탈피를 안합니다."
+                    id="곤란한사람"
+                    />
+                    <QnAList
+                    number="1"
+                    title="새로 입양을 했는데요..."
+                    id="goodman"
+                    />
                 </div>
 
             </div>
@@ -51,4 +45,4 @@ function CommuMain(props) {
     )
 }
 
-export default CommuMain;
+export default QnAMain;
