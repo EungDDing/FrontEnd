@@ -15,6 +15,7 @@ import CommuMain from './component/Community/CommuMain';
 import QnAMain from './component/QnA/QnAMain';
 import TradePage from './component/Trade/TradePage';
 import TradeMain from './component/Trade/TradeMain';
+import CommuPage from './component/Community/CommuPage';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path = "/Trade/TradePage" element = { <TradeMain />}/>
         <Route path = "/QnA" element = { <QnAMain /> }/>
         <Route path = "/Community" element = { <CommuMain /> }/>
+        <Route path = "/Community/CommuPage" element = { <CommuPage /> }/>
         <Route path = "/MyPage" element = { <Diary /> }/>
         <Route path = "/Information/BallpythonMain" element = { <BallpythonMain /> }/>
         <Route path = "/Information/BallpythonMain/BallpythonAdoption" element = { <BallpythonAdoption /> }/>

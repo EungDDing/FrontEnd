@@ -1,6 +1,6 @@
-
 import ListGroup from "react-bootstrap/ListGroup";
 import React from "react";
+import CommuList from "./CommuList";
 
 function CommuMain(props) {
     return (
@@ -18,33 +18,29 @@ function CommuMain(props) {
                 <div style={{
                     borderBottom: "2px solid rgba(0, 0, 0, 1)",
                 }}></div>
-                <div>
-                    <ListGroup variant="flush">
-                        <ListGroup.Item><span style={{
-                            margin: "1%",
-                        }}>4</span>
-                        <span>제 귀여운 도마뱀 좀 보세요</span><span style={{
-                            float: "right",
-                        }}>goodman</span></ListGroup.Item>
-                        <ListGroup.Item><span style={{
-                            margin: "1%",
-                        }}>3</span>
-                        <span>새로 입양한 친구입니당</span><span style={{
-                            float: "right",
-                        }}>Rapture</span></ListGroup.Item>
-                        <ListGroup.Item><span style={{
-                            margin: "1%",
-                        }}>2</span>
-                        <span>못 참고 질렀습니다</span><span style={{
-                            float: "right",
-                        }}>richman</span></ListGroup.Item>
-                        <ListGroup.Item><span style={{
-                            margin: "1%",
-                        }}>1</span>
-                        <span>제 귀여운 도마뱀 좀 보세요</span><span style={{
-                            float: "right",
-                        }}>goodman</span></ListGroup.Item>
-                    </ListGroup>
+                <div style={{
+                    marginTop: "10px"
+                }}>
+                    <CommuList 
+                    number="4"
+                    title="도마뱀 100마리째 입양입니다."
+                    id="richman"
+                    />
+                    <CommuList 
+                    number="3"
+                    title="이녀석 왜이럴까요"
+                    id="뱀마스터"
+                    />
+                    <CommuList 
+                    number="2"
+                    title="도와주세요"
+                    id="viper"
+                    />
+                    <CommuList 
+                    number="1"
+                    title="제 귀여운 도마뱀 좀 보세요"
+                    id="goodman"
+                    />
                 </div>
 
             </div>
