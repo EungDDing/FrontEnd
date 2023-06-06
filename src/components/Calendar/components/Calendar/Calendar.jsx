@@ -5,6 +5,7 @@ import { useContext, useEffect } from 'react';
 import { useDay } from '../../hooks/useDay.js';
 import { CalendarContext } from '../../context/index.js';
 
+
 const Calendar = ({ eventRef, viewRef, modalActive, setModalActive }) => {
   const { days, setDays, events, date } = useContext(CalendarContext);
   const daysData = useDay(date, events);
