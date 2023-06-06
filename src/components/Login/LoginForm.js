@@ -31,14 +31,16 @@ const LoginForm = () => {
         axios.post('http://3.88.1.192:3000/api/login', { 
             username: document.getElementsByName("username"),
             password: document.getElementsByName("password")
+            
         })
         .then(response => {
         const data = response.data;
+        console.log(`로그`);
         if (data.success) {
             // 로그인 성공
             console.log(`로그인 성공: 사용자 ${data.user}`);
             // 세션 등의 로그인 관련 처리를 진행합니다.
-        } else {
+        } else { 
             // 로그인 실패
             console.log('로그인 실패:', data.message);
             // 실패에 따른 처리를 수행합니다.

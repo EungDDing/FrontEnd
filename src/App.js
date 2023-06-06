@@ -28,8 +28,7 @@ const App = () => {
     <Router>
       <NavbarElements />
       
-      <Routes>
-            <Route exact path="/" component={Home} />       
+      <Routes>      
             <Route path = "/" element = { <Home /> }/>
             <Route path = "/Login" element = { <LoginPage /> }/>
             <Route path = "/SignUp" element = { <RegisterPage /> }/>
