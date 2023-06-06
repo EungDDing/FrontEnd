@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changeField, initializeForm } from './auth';
 import AuthForm from './AuthForm';
 import axios from 'axios';
+import { withRouter } from 'react-router-dom';
 
 const LoginForm = () => {
     const dispatch = useDispatch();
@@ -29,7 +30,7 @@ const LoginForm = () => {
         e.preventDefault();
 
         axios.post('http://3.88.1.192:3000/api/login', { 
-            username: document.getElementsByName("username"),
+            username: document.getElementsByName("name"),
             password: document.getElementsByName("password")
             
         })
@@ -68,4 +69,4 @@ const LoginForm = () => {
     );
 };
 
-export default LoginForm;
+export default withRouter(LoginForm);
