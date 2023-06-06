@@ -17,6 +17,8 @@ import TradePage from './component/Trade/TradePage';
 import TradeMain from './component/Trade/TradeMain';
 import CommuPage from './component/Community/CommuPage';
 import QnAPage from './component/QnA/QnAPage';
+import LoginPage from './components/Login/LoginPage';
+import RegisterPage from './components/Login/RegisterPage';
 
 const App = () => {
 
@@ -29,6 +31,8 @@ const App = () => {
       <Routes>
             <Route exact path="/" component={Home} />       
             <Route path = "/" element = { <Home /> }/>
+            <Route path = "/Login" element = { <LoginPage /> }/>
+            <Route path = "/SignUp" element = { <RegisterPage /> }/>
             <Route path = "/Information" element = { <Information /> }/>
             <Route path = "/Trade" element = { <TradePage /> }/>
             <Route path = "/Trade/TradePage" element = { <TradeMain />}/>

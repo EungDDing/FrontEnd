@@ -16,8 +16,8 @@ const NavbarElements = () => {
                             <Nav.Link href="/QnA">QnA</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#signin">로그인</Nav.Link>
-                            <Nav.Link href="#signup">회원가입</Nav.Link>
+                            <Nav.Link href="/Login">로그인</Nav.Link>
+                            <Nav.Link href="/SignUp">회원가입</Nav.Link>
                             <Nav.Link href="/MyPage">마이페이지</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
